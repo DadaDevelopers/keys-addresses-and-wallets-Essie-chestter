@@ -1,0 +1,25 @@
+Legacy Address:
+1FfmbHfnpaZjKFvyi1okTjJJusN455paPH
+
+Bech32 Address:
+bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080
+
+Bech32m Address:
+bc1p5cyxnuxmeuwuvkwfem96l0a9n0v5j9g8m6r4n3c2z1y7xwq0p5s9l3d4e
+
+# Difference between hardened and non-hardened keys
+
+Hardened keys:
+- Derived in a way that prevents someone from computing the parent private key from the child key.
+- Safer for backups, especially if a child key is exposed.
+
+Non-hardened keys:
+- Can derive both the child public key and the parent public key.
+- Useful for generating public keys without needing the private key.
+
+# Why wallet developers prefer deterministic wallets
+
+- Deterministic wallets generate all keys from a single seed phrase.
+- Easier to backup and restore the entire wallet.
+- Simplifies wallet management; no need to track each key individually.
+- Improves security and usability compared to non-deterministic (random) wallets.
